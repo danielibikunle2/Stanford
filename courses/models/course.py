@@ -7,4 +7,4 @@ class Course(Model):
     description = CharField(max_length=600)
 
     def __str__(self):
-        return "%s %s" (self.name, self.code)
+        return f"{self.name} - {self.code}"

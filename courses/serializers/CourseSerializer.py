@@ -3,7 +3,7 @@ from courses.models.course import Course
 
 
 class CourseSerializer(Serializer):
-    name = CharField()
+    name = CharField(max_length=100)
     code = CharField()
     description = CharField()
 

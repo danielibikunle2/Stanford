@@ -5,5 +5,6 @@ from courses.views.course_views import *
 app_name = 'courses'
 urlpatterns =[
 
-    path("all", course_list, name="all_courses")
+    path("all", course_list, name="course-list"),
+    path("<int:pk>", course_detail, name="course-detail"),
 ]
